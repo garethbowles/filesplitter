@@ -20,9 +20,11 @@ valueLists.each { valueMap ->
     def outFile = new File("pairs_${fileKey}")
     // newWriter() overwrites the existing file
     def w = outFile.newWriter()
+    println "Created new file for key ${fileKey}..."
     // Append each key,value pair
     valueMap.value.sort().each { value ->
         w << "${fileKey},${value}\n"
     }
+    println "...added ${valueMap.value.size()} values to file."
     w.close()    
 }
