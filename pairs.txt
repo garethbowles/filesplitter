@@ -5,4 +5,8 @@ name,Harish
 location,Mountain View
 company,Netflix
 company,Google
+name,Fred
+name,Barney
+company,Apple
+location,Cupertino
 location,Santa Cruz
