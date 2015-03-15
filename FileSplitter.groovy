@@ -21,7 +21,7 @@ valueLists.each { valueMap ->
     // newWriter() overwrites the existing file
     def w = outFile.newWriter()
     // Append each key,value pair
-    valueMap.value.each { value ->
+    valueMap.value.sort().each { value ->
         w << "${fileKey},${value}\n"
     }
     w.close()    
